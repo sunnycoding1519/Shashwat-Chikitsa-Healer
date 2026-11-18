@@ -7,6 +7,8 @@ import {
 
 import guruPhoto from "./assets/swami ji.jpg";
 import trainingPhoto from "./assets/Training.jpeg";
+import babaJiPhoto from "./assets/baabaji.jpeg";
+
 const PHONE = '917355095660'; // WhatsApp number in international format
 const GPayNumber = '7355095660';
 // Add your real Razorpay / UPI payment URL here before publishing.
@@ -285,7 +287,7 @@ function App() {
           </div>
           <div className="mentor-photo">
   <img
-    src="/src/assets/baabaji.jpeg"
+    src={babaJiPhoto}
     alt="Param Pujya Baba Swami Bhakti Prakash Ji"
     className="mentor-portrait"
   />

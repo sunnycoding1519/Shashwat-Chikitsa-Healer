@@ -283,12 +283,13 @@ function App() {
             <p className="muted">यहां बाबा जी का verified परिचय, अनुभव, उपलब्धियां और वास्तविक testimonials जोड़े जा सकते हैं।</p>
             <a className="under-link" href="#register">Join the live program <ArrowRight size={17}/></a>
           </div>
-          <div className="mentor-photo image-placeholder">
-            <div className="placeholder-icon"><Leaf size={36}/></div>
-            <strong>ADD BABA JI PORTRAIT</strong>
-            <span>Replace with official photo</span>
-            <small>Portrait image placeholder</small>
-          </div>
+          <div className="mentor-photo">
+  <img
+    src="/src/assets/baabaji.jpeg"
+    alt="Param Pujya Baba Swami Bhakti Prakash Ji"
+    className="mentor-portrait"
+  />
+</div>
         </section>
 
         <section className="schedule section-pad" id="schedule">

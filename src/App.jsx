@@ -330,27 +330,39 @@ function App() {
             title={<>Moments of <em>learning & community.</em></>} 
             desc="Add authentic photos and videos from your training sessions, events and learning activities."
           />
-          <div className="gallery-grid">
-            <div className="gallery-main image-placeholder">
-              <div className="placeholder-icon"><Play size={30}/></div>
-              <strong>ADD FEATURE VIDEO HERE</strong>
-              <span>Paste your YouTube embed or add your own video</span>
-              <small>Suggested: 16:9 video</small>
-            </div>
-            <div className="gallery-side">
-              <div className="image-placeholder gallery-small">
-                <div className="placeholder-icon"><Flower2/></div>
-                <strong>PHOTO 01</strong>
-                <span>Add your image</span>
-              </div>
-              <div className="image-placeholder gallery-small">
-                <div className="placeholder-icon"><Leaf/></div>
-                <strong>PHOTO 02</strong>
-                <span>Add your image</span>
-              </div>
-            </div>
-          </div>
-          <p className="gallery-tip">Tip: Use real event photographs and short clips to build trust. Get permission before publishing participant photos.</p>
+         <section className="gallery section-pad" id="gallery">
+  <div className="section-heading">
+    <span className="eyebrow">OUR MEMORIES</span>
+    <h2>
+      Moments of <em>learning & community.</em>
+    </h2>
+    <p>
+      Explore glimpses of our training sessions, events and learning activities.
+    </p>
+  </div>
+
+  <div className="gallery-video">
+    <iframe
+      src="https://www.youtube.com/embed/XdX7AiFYpKQ?si=NZnWc1HUMYJMz8s7"
+      title="Shashwat Chikitsa Training Video"
+      allowFullScreen
+    ></iframe>
+  </div>
+
+  <div className="gallery-grid">
+    <div className="gallery-item">
+      <img src="/src/assets/Photo 1.jpeg" alt="Shashwat Chikitsa Training" />
+    </div>
+
+    <div className="gallery-item">
+      <img src="/src/assets/Photo 2.jpeg" alt="Shashwat Chikitsa Learning Session" />
+    </div>
+  </div>
+
+  <p className="gallery-tip">
+    Real moments. Authentic learning. A community growing together.
+  </p>
+</section>
         </section>
 
         <section className="audience section-pad">

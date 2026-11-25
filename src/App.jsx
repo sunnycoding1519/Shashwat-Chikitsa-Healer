@@ -12,7 +12,7 @@ import babaJiPhoto from "./assets/baabaji.jpeg";
 const PHONE = '917355095660'; // WhatsApp number in international format
 const GPayNumber = '7355095660';
 // Add your real Razorpay / UPI payment URL here before publishing.
-const PAYMENT_LINK = 'https://rzp.io/rzp/aJp3nnH'; // Example: 'https://rzp.io/l/your-payment-link'
+const PAYMENT_LINK = 'https://rzp.io/rzp/OeUKEGN'; // Example: 'https://rzp.io/l/your-payment-link'
 const whatsappLink = (message = 'Namaste, I want to register for the 3 Days Shashwat Chikitsa Live Online Training.') => 
   `https://wa.me/${PHONE}?text=${encodeURIComponent(message)}`;
 
@@ -53,7 +53,7 @@ const faqs = [
   ['यह प्रशिक्षण कितने दिनों का है?', 'यह 3 दिवसीय Live Online introductory training program है।'],
   ['क्लास कब और कितने बजे होगी?', '20, 21 और 22 November 2026 को रात 8:00 से 9:30 बजे तक।'],
   ['क्लास कहां होगी?', 'सभी sessions Live Zoom के माध्यम से होंगे। Joining details registration confirmation के बाद साझा की जाएंगी।'],
-  ['Registration fee कितनी है?', 'Special entry fee ₹199 है। भुगतान के बाद WhatsApp पर अपना नाम और payment screenshot भेजें।'],
+  ['Registration fee कितनी है?', 'Special entry fee ₹99 है। भुगतान के बाद WhatsApp पर अपना नाम और payment screenshot भेजें।'],
   ['क्या beginners भी जुड़ सकते हैं?', 'हां। यह शुरुआती स्तर का परिचयात्मक कार्यक्रम है और प्राकृतिक स्वास्थ्य में रुचि रखने वाले learners के लिए है।'],
 ];
 
@@ -126,7 +126,7 @@ function App() {
             <a key={h} href={h} onClick={() => setMenuOpen(false)}>{t}</a>
           ))}
           <button className="nav-cta" type="button" onClick={() => { setMenuOpen(false); handlePayment(); }}>
-            Pay ₹199 <ArrowRight size={16}/>
+            Pay ₹99 <ArrowRight size={16}/>
           </button>
         </nav>
       </header>
@@ -143,7 +143,7 @@ function App() {
               <p className="hero-hindi">वैदिक एवं प्राकृतिक स्वास्थ्य पद्धतियों को समझें और ज्ञान व सेवा की नई यात्रा शुरू करें।</p>
               <div className="hero-actions">
                 <button className="btn btn-gold" type="button" onClick={handlePayment}>
-                  Pay ₹199 & Register <ArrowRight size={18}/>
+                  Pay ₹99 & Register <ArrowRight size={18}/>
                 </button>
                 <a className="text-link" href="#curriculum">
                   <span className="play-icon"><Play size={13} fill="currentColor"/></span> Explore the program
@@ -392,7 +392,7 @@ function App() {
             <span className="eyebrow">YOUR NEXT STEP STARTS HERE</span>
             <h2>Be part of the <em>3-day experience.</em></h2>
             <p>Reserve your place in the live online introductory training program.</p>
-            <div className="price-line"><span>Special entry fee</span><strong>₹199<small> only</small></strong></div>
+            <div className="price-line"><span>Special entry fee</span><strong>₹99<small> only</small></strong></div>
             <div className="register-details">
               <span><CalendarDays size={17}/> 20–22 November 2026</span>
               <span><Clock3 size={17}/> 8:00 PM – 9:30 PM</span>
@@ -407,7 +407,7 @@ function App() {
                 {copied ? <Check size={16}/> : 'Copy number'}
               </button>
             </div>
-            <p className="payment-help">Online payment link या UPI / GPay से ₹199 का भुगतान करें। इसके बाद payment screenshot WhatsApp पर भेजें ताकि आपकी registration confirm की जा सके।</p>
+            <p className="payment-help">Online payment link या UPI / GPay से ₹99 का भुगतान करें। इसके बाद payment screenshot WhatsApp पर भेजें ताकि आपकी registration confirm की जा सके।</p>
           </div>
 
           <form className="register-form" onSubmit={submitRegistration}>
@@ -462,7 +462,7 @@ function App() {
           <h2>Take your first step<br/>towards <em>learning.</em></h2>
           <p>Join the 3-day Shashwat Chikitsa introductory live online program.</p>
           <button className="btn btn-gold" type="button" onClick={handlePayment}>
-            Pay ₹199 & Register <ArrowRight size={18}/>
+            Pay ₹99 & Register <ArrowRight size={18}/>
           </button>
           <small>20–22 November 2026 · Live on Zoom</small>
         </section>
@@ -487,13 +487,13 @@ function App() {
       </footer>
 
       <button className="mobile-sticky" type="button" onClick={handlePayment}>
-        <span><small>3-DAY LIVE TRAINING</small><strong>Pay ₹199 & Register</strong></span>
+        <span><small>3-DAY LIVE TRAINING</small><strong>Pay ₹99 & Register</strong></span>
         <b>PAY NOW <ArrowRight size={17}/></b>
       </button>
 
       <button className="desktop-payment-float" type="button" onClick={handlePayment}>
         <span className="pay-float-label">SPECIAL ENTRY FEE</span>
-        <strong>Pay ₹199</strong>
+        <strong>Pay ₹99</strong>
         <span className="pay-float-action">REGISTER NOW <ArrowRight size={15}/></span>
       </button>
 
